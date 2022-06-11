@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>React уроки - курс обучения React JS для начинающих c нуля на itProger</title>
+    <meta name="description" content="Уроки React JS для начинающих на itProger ⚡ Курсы обучения React с нуля ⚡ Основы работы с библиотекой с открытым исходным кодом в видеоуроках " />
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="A.main-style.css.pagespeed.cf.5J4sIzXyja.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="A.one-course.css.pagespeed.cf.35eEXT4reA.css" type="text/css" charset="utf-8">
+    <meta property="og:title" content="React уроки - курс обучения React JS для начинающих c нуля на itProger" />
+    <meta property="og:description" content="Уроки React JS для начинающих на itProger ⚡ Курсы обучения React с нуля ⚡ Основы работы с библиотекой с открытым исходным кодом в видеоуроках " />
+    <meta property="og:image" content="https://itproger.com/img/courses/1494770683.jpg" />
+    <meta property="og:site_name" content="itProger - Сообщество программистов" />
+    <link rel="stylesheet" href="A.comment-form.css.pagespeed.cf.KQO0sjpG01.css" type="text/css" charset="utf-8">
+    <style>
+        .full-page-block {
+            background: url(/paid_courses/img/bg-pattern.png), linear-gradient(to left, #347c96, #333)
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container eco">
+	<p>Делаем добро вместе <i style="color: #7fd24f" class="fas fa-leaf"></i> <a href="/eco" style="margin-left: 10px">Детальнее</a> <i style="float: right; font-size: 17px;margin-top: 3px" class="far fa-times-circle"></i></p>
+</div>
+ -->
+    <!-- Эти два тега нужны чтобы указать главную часть и прикрепить футер к низу страницы -->
+    <div id="wrapper">
+        <div id="content">
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131007013-1"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+                gtag('config', 'UA-131007013-1');
+            </script>
+            <header class="container">
+                <div id="everything-header">
+                    <div id="logo">
+                        <a href="/" title="На главную страницу">
+                            <img src="logo_simple.svg" class="logo_simple" title="itProger.com" alt="itProger.com">
+                            <span>itProger</span>
+                        </a>
+                    </div>
+                    <div id="about">
+                        <noindex><a rel="nofollow" href="https://partners.itproger.com/" title="Партнерская система">Партнёрка</a></noindex>
+                        <a href="/kontakti" title="Обратная связь">Контакты</a>
+                    </div>
+                    <div id="reg_auth">
+                        <a href="/user/" class="btn white">
+Войти
+<div class="btn__blobs">
+<div></div>
+<div></div>
+<div></div>
+</div>
+</a>
+                        <a href="/reg" class="btn red header-last-btn">
+Регистрация
+<div class="btn__blobs">
+<div></div>
+<div></div>
+<div></div>
+</div>
+</a>
+                    </div>
+                    <div id="mobileMenu">
+                        <div class="icon-menu"><i class="fas fa-bars"></i></div>
+                    </div>
+                </div>
+                <div id="mobile-menu">
+                    <a href="/news">iT статьи</a><br>
+                    <a href="/courses/">Видеокурсы</a><br>
+                    <a href="/tests">Тесты и практика</a><br>
+                    <a href="/intensive/">Программы обучения</a><br>
+                    <noindex><a rel="nofollow" href="https://partners.itproger.com/">Партнёрка</a></noindex><br>
+                    <a href="/kontakti" title="Обратная связь">Контакты</a>
+                    <div class="search" onclick="$('#modal-full').show(); $('body, html').css('overflow', 'hidden');$('#searchField').focus()"><i class="fas fa-search"></i> Поиск</div><br>
+                    <a href="/user/" class="btn white">
+Войти
+<div class="btn__blobs">
+<div></div>
+<div></div>
+<div></div>
+</div>
+</a>
+                    <a href="/reg" class="btn red header-last-btn">
+Регистрация
+<div class="btn__blobs">
+<div></div>
+<div></div>
+<div></div>
+</div>
+</a>
+                </div>
+            </header>
+            <nav class="container">
+                <div id="hideMenu">
+                    <a href="/" id="img-nav" title="На главную страницу">
+                        <img src="logo_simple.svg" title="itProger.com" alt="itProger.com">
+                    </a>
+                    <a href="/news">iT статьи</a>
+                    <a href="/courses/">Видеокурсы</a>
+                    <a href="/tests">Тесты и практика</a>
+                    <a href="/intensive/">Программы обучения</a>
+                </div>
+                <div id="search">
+                    <div onclick="$('#modal-full').show(); $('body, html').css('overflow', 'hidden');$('#searchField').focus()"><i class="fas fa-search"></i> Поиск</div>
+                </div>
+            </nav>
+            <div id="modal-full">
+                <div class="modal-close" onclick="$('#modal-full').hide(); $('body, html').css('overflow', 'initial'); "><i class="fas fa-times"></i></div>
+                <form onsubmit="validSearch(); return false" autocomplete="off">
+                    <input type="text" id="searchField" placeholder="Пишите тут..." autofocus>
+                    <button type="submit" class="btn red">
+Поиск
+<div class="btn__blobs">
+<div></div>
+<div></div>
+<div></div>
+</div>
+</button>
+                </form>
+            </div>
+            <!-- Основная секция на сайте -->
+            <div class="full-page-block container">
+                <h1>Уроки React JS</h1>
+                <div class="info">
+                    <div><i class="fas fa-circle" style="color:#347c96"></i> 14 уроков</div>
+                    <div><i class="fas fa-circle" style="color:#347c96"></i> <a href='/practice/react-js'>39 заданий</a></div>
+                    <div><i class="fas fa-circle" style="color:#347c96"></i> <a href="/spravka/javascript">Справочник</a></div>
+                    <div><i class="fas fa-circle" style="color:#347c96"></i> <a href="" onclick="slowScroll ('#help_block'); return false">Консультации</a></div>
+                </div>
+                <div class="trees">
+                    <svg width="48" height="118" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24.1725.59375C11.0527.59375.344727 11.3018.344727 24.4215v43.0249c0 13.1198 10.707973 23.8278 23.827773 23.8278 13.1197 0 23.8277-10.708 23.8277-23.8278V24.4215c0-13.1197-10.708-23.82775-23.8277-23.82775z" fill="#347c96"/>
+<path d="M24.2698 12.1704h-.7718V117.128h.7718V12.1704z" fill="#F9E2FF"/>
+<path d="M12.0176 43.8106l11.6726 9.7433 13.0233-9.261-.3859-.6752-12.6374 8.9715-10.9974-9.3574-.6752.5788zM12.0176 67.1568l11.6726 9.7433 13.0233-9.2609-.3859-.6753-12.6374 8.9716-10.9974-9.3575-.6752.5788zM12.0176 20.4672l11.6726 9.7433 13.0233-9.261-.3859-.6753-12.6374 8.9716-10.9974-9.3574-.6752.5788z" fill="#F9E2FF"/>
+</svg>
+                    <svg width="48" height="118" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24.1725.59375C11.0527.59375.344727 11.3018.344727 24.4215v43.0249c0 13.1198 10.707973 23.8278 23.827773 23.8278 13.1197 0 23.8277-10.708 23.8277-23.8278V24.4215c0-13.1197-10.708-23.82775-23.8277-23.82775z" fill="#347c96"/>
+<path d="M24.2698 12.1704h-.7718V117.128h.7718V12.1704z" fill="#F9E2FF"/>
+<path d="M12.0176 43.8106l11.6726 9.7433 13.0233-9.261-.3859-.6752-12.6374 8.9715-10.9974-9.3574-.6752.5788zM12.0176 67.1568l11.6726 9.7433 13.0233-9.2609-.3859-.6753-12.6374 8.9716-10.9974-9.3575-.6752.5788zM12.0176 20.4672l11.6726 9.7433 13.0233-9.261-.3859-.6753-12.6374 8.9716-10.9974-9.3574-.6752.5788z" fill="#F9E2FF"/>
+</svg>
+                </div>
+            </div>
+            <div class="main-wrapper container">
+                <main class="left">
+                    <div class="nesting">
+                        <div xmlns:v="http://rdf.data-vocabulary.org/#">
+                            <span typeof="v:Breadcrumb">
+<a href="/" rel="v:url" property="v:title">itProger</a> <i class="fas fa-arrow-right" aria-hidden="true"></i> </span>
+                            <span typeof="v:Breadcrumb">
+<a href="/courses/" rel="v:url" property="v:title">Видеокурсы</a> <i class="fas fa-arrow-right" aria-hidden="true"></i> </span>
+                            <span typeof="v:Breadcrumb"><a href="react-js" class="lastBread" rel="v:url" property="v:title">Курс по React JS для начинающих</a></span> </div>
+                    </div>
+                    <div class="block article_block">
+                        <div class="presentation-block">
+                            <div class="img-presentation">
+                                <img src="1494770683.jpg" alt="Курс по React JS / Урок #1 - Введение в ReactJS" title="Курс по React JS / Урок #1 - Введение в ReactJS">
+                            </div>
+                            <div class="lesson-name-text">
+                                <h2>Курс по React JS / Урок #1 - Введение в ReactJS</h2>
+                                <div class="tags"><a href="/tag/javascript" class="btn white">
+JavaScript
+<div class="btn__blobs">
+<div></div>
+<div></div>
+<div></div>
+</div>
+</a><a href="/tag/react-js" class="btn white">
+React JS
+<div class="btn__blobs">
+<div></div>
+<div></div>
+<div></div>
+</div>
+</a><a href="/tag/node-js" class="btn white">
+Node JS
+<div class="btn__blobs">
+<div></div>
+<div></div>
+<div></div>
+</div>
+</a></div>
+                                <div class="sharethis-inline-share-buttons"></div>
+                            </div>
+                            <div class="favourite-star">
+                                <i class="far fa-star favourite" title="Добавить урок в избранное"></i>
+                            </div>
+                        </div>
+                        <div class="intro-block">
+                            Представляем вам курс по изучению JavaScript фреймворка - React JS. В ходе курса вы изучите работу с реактом, научитесь прописывать на его основе программы и создадите одно полноценное приложение с красивым пользовательским дизайном. </div>
+                        <div class="main-video">
+                            <h3 class="head-text">Видеоурок</h3>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ftrn50AJa2w?rel=0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="main-text">
+                            <p><strong>Полезные ссылки:</strong></p>
+                            <ul>
+                                <li>Официальный
+                                    <noindex><a rel='nofollow' target='_blank' href="https://reactjs.org/" rel="nofollow" target="_blank">сайт React</a></noindex>;</li>
+                            </ul>
+                            <p><br></p>
+                            <h4>Информация про React JS</h4>
+                            <p>React JS не работает с функциональной частью сайта, но отлично справляется со своей основной работой &ndash; созданием пользовательского интерфейса. React создается и поддерживается компанией FaceBook, которая использовала
+                                данную библиотеку в инстаграмме и в самом FaceBook.</p>
+                            <p><br></p>
+                            <p>При помощи React JS вы можете создавать приложение, на которые ранее могли уходить не просто часы, а целые недели. React очень упрощает процесс создания сайта, а также делает его более отзывчивым и легким для доработки.</p>
+                            <p><br></p>
+                            <p>Но есть в React и ложка дёгтя. Фреймворк не так уж прост в изучении и при первом подходе может показаться чересчур сложным и не нужным. Теме не менее, программы, написанные на нем, являются удобными в использовании, могут работать
+                                с высоким траффиком пользователей, а также их можно с легкостью отредактировать.</p>
+                            <p><br></p>
+                            <p>Кроме того, многие современные компании обязательно требуют от новичков знаний React JS, поэтому овладев этой библиотекой вам будет гораздо проще найти работу.</p>
+                            <p><br></p>
+                            <h4>План курса</h4>
+                            <p>За курс вами будет изучена библиотека React JS, начиная от её установки и заканчивая реализацией небольшого веб проекта.&nbsp;</p>
+                            <p><br></p>
+                            <p>Прежде чем приступать к видео курсу вам стоит ознакомиться с языком
+                                <noindex><a href="javascript">JavaScript</a></noindex> и
+                                <noindex><a href="node-js">Node JS</a></noindex>, так как именно они являются основными платформами на которых построена библиотека React.</p>
+                        </div>
+                        <p class="head-text">Материалы для курса</p>
+                        <div class="materials">
+                            <div class="files">
+                                <noindex>
+                                    <a rel="nofollow" href="" class="btn white" target="_blank" onclick="$('#show_sub').show (); return false">
+                                        <i class="fas fa-cloud-download-alt"></i> react_start.zip
+                                        <div class="btn__blobs">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                    </a>
+                                </noindex>
+                            </div>
+                            <div class="no-sub">
+                                <div>
+                                    <svg width="41" height="41" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#smile_svg)">
+<path d="M20.9141 40.9219c11.0457 0 20-8.9543 20-20 0-11.04572-8.9543-20.000025-20-20.000025C9.86837.921875.914062 9.87618.914062 20.9219c0 11.0457 8.954308 20 20.000038 20z" fill="#FFC107"/>
+<path d="M13.7035 18.2488c2.266 0 4.1029-1.837 4.1029-4.1029 0-2.266-1.8369-4.1029-4.1029-4.1029s-4.10291 1.8369-4.10291 4.1029c0 2.2659 1.83691 4.1029 4.10291 4.1029zM30.2513 18.2488c2.266 0 4.1029-1.837 4.1029-4.1029 0-2.266-1.8369-4.1029-4.1029-4.1029-2.2659 0-4.1029 1.8369-4.1029 4.1029 0 2.2659 1.837 4.1029 4.1029 4.1029z" fill="#fff"/>
+<path d="M14.7778 16.5809c1.3448 0 2.4349-1.0902 2.4349-2.435s-1.0901-2.435-2.4349-2.435c-1.3448 0-2.435 1.0902-2.435 2.435s1.0902 2.435 2.435 2.435zM31.3051 16.5809c1.3448 0 2.435-1.0902 2.435-2.435s-1.0902-2.435-2.435-2.435-2.435 1.0902-2.435 2.435 1.0902 2.435 2.435 2.435zM20.9365 32.2157c-.22 0-.441-.0041-.6632-.0125-3.4799-.1316-6.5233-1.2902-8.35-3.179-.2847-.2943-.2767-.7636.0175-1.0481.2944-.2848.7636-.2768 1.0482.0174 3.2592 3.3701 11.1893 3.697 15.152.6245.2031-.1574.5881-.5184.7194-.6442.2955-.2833.7646-.2735 1.0481.022.2834.2956.2735.7648-.022 1.0481-.054.0517-.536.5124-.837.7458-2.0068 1.5557-4.9349 2.426-8.113 2.426z" fill="#211F1D"/>
+</g>
+<defs>
+<clipPath id="smile_svg">
+<path fill="#fff" transform="translate(.914062 .921875)" d="M0 0h40v40H0z"/>
+</clipPath>
+</defs>
+</svg>
+                                </div>
+                                <div>
+                                    <p>Чтобы скачивать материалы к видеокурсам необходимо оформить подписку на сайт</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="code-block">
+                            <p class="head-text">Исходный код</p>
+                            <div class='code_snipet_0'>
+                                <div class='code-snip'>
+                                    <span class='code_title'>Скачанный html файл</span>
+                                    <span class='full_window_code' onclick='openCodeSnipet("code_snipet_0")' title='Открыть на весь экран'>
+<i class='fas fa-expand-arrows-alt'></i>
+</span>
+                                </div>
+                                <pre><code class='language-html'>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;title&gt;Hello World&lt;/title&gt;
+    &lt;script src=&quot;https://unpkg.com/react@latest/dist/react.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://unpkg.com/react-dom@latest/dist/react-dom.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://unpkg.com/babel-standalone@6.15.0/babel.min.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;root&quot;&gt;&lt;/div&gt;
+    &lt;script type=&quot;text/babel&quot;&gt;
+      ReactDOM.render(
+        &lt;h1&gt;Hi, world!&lt;/h1&gt;,
+        document.getElementById(&#039;root&#039;)
+      );
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                            </div>
+                        </div>
+                        <div class="task-block">
+                            <p class="head-text">Задание к уроку</p>
+                            <div class="one-task">
+                                <span class="task_title">Устанока React</span>
+                                <div class="zadanie txt">
+                                    <p>Скайте и установите React JS для дальнейшей работы с ним.</p>
+                                </div>
+                                <div class="otvet txt">
+                                    <div onclick="otvet ('#otvet-0', '#arrow-0')" class="btn white">
+                                        <span class="text-otvet-task">Посмотреть ответ</span> <i class="fas fa-arrow-down" id="arrow-0"></i>
+                                        <div class="btn__blobs">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                    <div class="hide" id="otvet-0">
+                                        <p>Вам необходимо скачать React с официального сайта, что доступен по
+                                            <noindex><a rel='nofollow' target='_blank' href="https://facebook.github.io/react/">этой ссылке</a></noindex>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="indibidual">
+                            <p class="head-text">Большое задание по курсу</p>
+                            <div class='bigTask'>
+                                <p class="need_sub">Вам необходимо <a href="/reg" target="_blank" title="Подписка на сайт">оформить подписку на сайте</a>, чтобы иметь доступ ко всем большим заданиям. В задание входит методика решения, а также готовый проект с ответом к заданию.<br><b>PS:</b>                                    подобные задания доступны при <a href="/reg" target="_blank" title="Подписка на сайт">подписке от 1 месяца</a></p>
+                            </div>
+                        </div>
+                        <div class="fav-bottom">
+                            <i class="far fa-star favourite" title="Добавить урок в избранное"></i>
+                        </div>
+                        <div class="tags"><a href="/tag/javascript" class="btn white">
+JavaScript
+<div class="btn__blobs">
+<div></div>
+<div></div>
+<div></div>
+</div>
+</a><a href="/tag/react-js" class="btn white">
+React JS
+<div class="btn__blobs">
+<div></div>
+<div></div>
+<div></div>
+</div>
+</a><a href="/tag/node-js" class="btn white">
+Node JS
+<div class="btn__blobs">
+<div></div>
+<div></div>
+<div></div>
+</div>
+</a></div>
+                        <div class="sharethis-inline-share-buttons"></div>
+                        <div class="nav_uroki">
+                            <div class="prev"></div>
+                            <div class="next"><a href="react-js/2" class="btn red">
+Следующий <i class="fas fa-arrow-right"></i>
+<div class="btn__blobs">
+<div></div>
+<div></div>
+<div></div>
+</div>
+</a></div>
+                        </div>
+                        <div class="all_lessons_mobile"></div>
+                        <p class="head-text">Также стоит посмотреть</p>
+                        <div class="allCourses">
+                            <div class="course">
+                                <a href="jquery">
+                                    <div class="course-img">
+                                        <img src="/img/courses/1476977931.jpg" alt="Изучение библиотек jQuery" title="Изучение библиотек jQuery">
+                                        <a href="/courses/web">
+                                            <div class="button-tag"># Веб сайты</div>
+                                        </a>
+                                        <div class="button-on-course"><i class="fas fa-play"></i></div>
+                                    </div>
+                                    <span class="title_course">Изучение библиотек jQuery</span>
+                                </a><br>
+                                <span class="time-start">24 урока</span>
+                            </div>
+                            <div class="course">
+                                <a href="vue-js">
+                                    <div class="course-img">
+                                        <img src="/img/courses/1502020336.jpg" alt="Уроки Vue.js для начинающих" title="Уроки Vue.js для начинающих">
+                                        <a href="/courses/web">
+                                            <div class="button-tag"># Веб сайты</div>
+                                        </a>
+                                        <div class="button-on-course"><i class="fas fa-play"></i></div>
+                                    </div>
+                                    <span class="title_course">Уроки Vue.js для начинающих</span>
+                                </a><br>
+                                <span class="time-start">10 уроков</span>
+                            </div>
+                            <div class="course">
+                                <a href="javascript">
+                                    <div class="course-img">
+                                        <img src="/img/courses/1476977754.jpg" alt="Изучение JavaScript для начинающих!" title="Изучение JavaScript для начинающих!">
+                                        <a href="/courses/languages">
+                                            <div class="button-tag"># Языки</div>
+                                        </a>
+                                        <div class="button-on-course"><i class="fas fa-play"></i></div>
+                                    </div>
+                                    <span class="title_course">Изучение JavaScript для начинающих!</span>
+                                </a><br>
+                                <span class="time-start">15 уроков</span>
+                            </div>
+                            <div class="course">
+                                <a href="react-native">
+                                    <div class="course-img">
+                                        <img src="/img/courses/1615637098.jpg" alt="Уроки React Native для начинающих / Разработка приложения с нуля" title="Уроки React Native для начинающих / Разработка приложения с нуля">
+                                        <a href="/courses/other">
+                                            <div class="button-tag"># Прочее</div>
+                                        </a>
+                                        <div class="button-on-course"><i class="fas fa-play"></i></div>
+                                    </div>
+                                    <span class="title_course">Уроки React Native для начинающих / Разработка приложения с нуля</span>
+                                </a><br>
+                                <span class="time-start">11 уроков</span>
+                            </div>
+                            <div class="course">
+                                <a href="node-js">
+                                    <div class="course-img">
+                                        <img src="/img/courses/1510913647.jpg" alt="Уроки Node JS и Express для начинающих" title="Уроки Node JS и Express для начинающих">
+                                        <a href="/courses/web">
+                                            <div class="button-tag"># Веб сайты</div>
+                                        </a>
+                                        <div class="button-on-course"><i class="fas fa-play"></i></div>
+                                    </div>
+                                    <span class="title_course">Уроки Node JS и Express для начинающих</span>
+                                </a><br>
+                                <span class="time-start">17 уроков</span>
+                            </div>
+                            <div class="course">
+                                <a href="reactjs-shop">
+                                    <div class="course-img">
+                                        <img src="/img/courses/1648996051.jpg" alt="Практика React JS / Разработка магазина (eCommerce)" title="Практика React JS / Разработка магазина (eCommerce)">
+                                        <a href="/courses/web">
+                                            <div class="button-tag"># Веб сайты</div>
+                                        </a>
+                                        <div class="button-on-course"><i class="fas fa-play"></i></div>
+                                    </div>
+                                    <span class="title_course">Практика React JS / Разработка магазина (eCommerce)</span>
+                                </a><br>
+                                <span class="time-start">9 уроков</span>
+                            </div>
+                        </div>
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed" data-ad-client="ca-pub-9626448578379214" data-ad-slot="1624352600"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                    <a name="comments-block"></a>
+                    <div class="comments">
+                        <b>Комментарии</b>
+                        <form id="comment-form">
+                            <textarea placeholder="Введите здесь комментарий..." id="message_comment"></textarea>
+                            <div class="reply-block" id="0"></div>
+                            <span class="form-button pre_code"><i class="fas fa-code"></i></span>
+                            <input type="text" placeholder="Укажите ваше имя" value="" id="username_comment" />
+                            <div class="check-block">
+                                <input type="checkbox" name="rulles" id="rulles_get_pop_up" checked>
+                                <span class="checkmark" onclick="setMarkerCheckbox()"><i class='fas fa-check'></i></span>
+                                <label for="rulles" onclick="setMarkerCheckbox()">Я даю согласие на <noindex><a href="/rights" rel="nofollow">обработку данных</a></noindex></label>
+                            </div>
+                            <div style="clear: both"></div>
+                            <div id="send_comment" class="btn red">
+                                Добавить комментарий
+                                <div class="btn__blobs">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div </form>
+                            <div style="clear: both"></div>
+                            <hr>
+                            <div class="all-comments">
+                                <div class="no-comments">Пока комментариев нет</div>
+                            </div>
+                    </div>
+                </main>
+                <aside>
+                    <div class="all_lessons_pc">
+                        <div class="all_lessons">
+                            <h2>Навигация по курсу</h2>
+                            <div id="listOfLessons">
+                                <ul>
+                                    <li id="now_item">Курс по React JS / Урок #1 - Введение в ReactJS</li>
+                                    <a href="react-js/2">
+                                        <li>#2 - Первая программа на React</li>
+                                    </a>
+                                    <a href="react-js/3">
+                                        <li>#3 - Создание компонентов</li>
+                                    </a>
+                                    <a href="react-js/4">
+                                        <li>#4 - Рендер нескольких компонентов</li>
+                                    </a>
+                                    <a href="react-js/5">
+                                        <li>#5 - Использование свойств (Props)</li>
+                                    </a>
+                                    <a href="react-js/6">
+                                        <li>#6 - Отслеживание событий в React</li>
+                                    </a>
+                                    <a href="react-js/7">
+                                        <li>#7 - Работа с состояниями (State)</li>
+                                    </a>
+                                    <a href="react-js/8">
+                                        <li>#8 - Добавление состояния к объектам</li>
+                                    </a>
+                                    <a href="react-js/9">
+                                        <li>#9 - Атрибуты refs</li>
+                                    </a>
+                                    <a href="react-js/10">
+                                        <li>#10 - Множественные дочерние компоненты</li>
+                                    </a>
+                                    <a href="react-js/11">
+                                        <li>#11 - Удаление компонентов и обновление состояний</li>
+                                    </a>
+                                    <a href="react-js/12">
+                                        <li>#12 - Использование функции в виде свойства</li>
+                                    </a>
+                                    <a href="react-js/13">
+                                        <li>#13 - Создание новых компонентов</li>
+                                    </a>
+                                    <a href="react-js/14">
+                                        <li>#14 - Заключительный урок</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="fixed_block">
+                        <h2>Тесты и практика</h2>
+                        <div class="test">
+                            <h4>React JS</h4>
+                            <div class="inner-block">
+                                <div class="text-test">
+                                    <a href="/test/react-js">
+                                        <span>Начальный уровень</span>
+                                    </a>
+                                    <div style="clear:both"></div>
+                                    <a href="/test/react-js/2">
+                                        <span>Средний уровень</span>
+                                    </a>
+                                    <div style="clear:both"></div>
+                                    <a href="/test/react-js/3">
+                                        <span>Сложный уровень</span>
+                                    </a>
+                                </div>
+                                <div>
+                                    <img src="/img/tests/react-js.svg" alt="React JS" title="React JS">
+                                </div>
+                            </div>
+                            <a href="/practice/react-js" class="btn white">Практические задачи <i class="fas fa-tasks"></i>
+<div class="btn__blobs">
+<div></div>
+<div></div>
+<div></div>
+</div>
+</a>
+                        </div>
+                        <div id='nav_fixed_aside'>
+                            <h2>Навигация</h2>
+                            <a href="react-js/2" class="btn white">
+                                <i class="fas fa-arrow-right"></i>
+                                <div class="btn__blobs">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <h2>Справочник</h2>
+                    <p class="text spravochnik">
+                        <a href="/spravka/javascript">
+                            <i class="fas fa-info-circle"></i> Справочник по JavaScript
+                        </a>
+                    </p>
+                    <h2 id="help_block">Консультация</h2>
+                    <p class="text">Необходима консультация? Вы можете задавать все свои вопросы из личного кабинета и получать ответы в удобном формате прямиком на сайте!</p>
+                    <div onclick="alert('Консультации доступны после подписки на проект от 6 месяцев')" class="btn red">
+                        Задать вопрос
+                        <div class="btn__blobs">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <h2 class="mt">Тест на выбор языка</h2>
+                    <p class="text">Не знаете какой язык изучать? Пройдите быстрый тест и определите какой язык программирования подходит именно вам</p>
+                    <a href="/language-test" class="btn red">
+Пройти тест
+<div class="btn__blobs">
+<div></div>
+<div></div>
+<div></div>
+</div>
+</a>
+                    <h2 class="mt">Подписка на проект</h2>
+                    <p class="text">Оформите подписку и после этого вам будут доступны: домашние задания, программный код, материалы, консультации и многое другое!</p>
+                    <a href="/reg" class="btn red">
+Оформить подписку
+<div class="btn__blobs">
+<div></div>
+<div></div>
+<div></div>
+</div>
+</a>
+                </aside>
+            </div>
+            <!-- Конец основной секции -->
+        </div>
+        <!-- Здесь закрываем тег #content -->
+        <footer class="container">
+            <div id="everything-footer">
+                <div class="logo">
+                    <div id="to_top" onclick="return toTop()"><i class="fas fa-chevron-up"></i></div>
+                    <a href="/" title="На главную страницу">
+                        <img src="/img/logo_simple.svg" class="logo_simple" title="itProger.com" alt="itProger.com">
+                        <span>itProger</span>
+                    </a><br>
+                    <p>Онлайн школа обучения<br>IT профессиям</p>
+                </div>
+                <div class="links">
+                    <div>
+                        <p class="headings-footer">Информация</p>
+                        <ul>
+                            <li><a href="/gift">Сертификаты</a></li>
+                            <li><a href="/spravka/">Справочники</a></li>
+                            <!-- 					<li><a href="/vacancy">Вакансии</a></li> -->
+                            <li><a href="/ad">Реклама</a></li>
+                            <!-- 					<noindex><li><a target="_blank" rel="nofollow" href="https://partners.itproger.com/">Партнёрка</a></li></noindex> -->
+                        </ul>
+                        <ul class="last">
+                            <li><a href="/about">О нас</a></li>
+                            <li><a href="/rights">Соглашение</a></li>
+                            <li><a href="/sitemap">Карта сайта</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="headings-footer">Аккаунт</p>
+                        <ul>
+                            <li><a href="/user/">Войти</a></li>
+                            <li><a href="/reg">Регистрация</a></li>
+                            <li><a href="/kontakti">Обратная связь</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="subscribe">
+                    <p>Подпишитесь на рассылку и сразу же получите 5 практических заданий по программированию!</p>
+                    <form action="">
+                        <input type="email" id="emailFooter" class="footer_subscribe" placeholder="E-mail">
+                        <div id="subscribe_footer" class="btn red">
+                            Подписаться
+                            <div class="btn__blobs">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </form>
+                    <p class="mail-footer">Пишите:
+                        <noindex><a href="mailto:help@itproger.com" rel="nofollow">help@itproger.com</a></noindex>
+                    </p>
+                </div>
+            </div>
+            <div id="social-buttons">
+                <noindex>
+                    <a href="https://vk.com/prog_life" target="_blank" rel="nofollow">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                </noindex>
+                <noindex>
+                    <a href="https://www.facebook.com/programsLife/" target="_blank" rel="nofollow">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </noindex>
+                <noindex>
+                    <a href="https://twitter.com/GoshaDudar" target="_blank" rel="nofollow">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </noindex>
+                <noindex>
+                    <a href="https://www.youtube.com/user/PlurrimiTube" target="_blank" rel="nofollow" class="mt-4 mt-md-0">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </noindex>
+                <noindex>
+                    <a href="http://t.me/itProger_official" target="_blank" rel="nofollow" class="mt-4 mt-md-0">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                </noindex>
+                <noindex>
+                    <a href="https://www.instagram.com/itproger_official/" target="_blank" rel="nofollow" class=" mt-4 mt-md-0">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </noindex>
+            </div>
+        </footer>
+    </div>
+    <!-- Здесь закрываем тег #wrapper -->
+    <!-- Yandex.Metrika counter -->
+    <!-- 	<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter40523585 = new Ya.Metrika({ id:40523585, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/40523585" style="position:absolute; left:-9999px;" alt="" /></div></noscript> -->
+    <!-- /Yandex.Metrika counter -->
+    <!--LiveInternet counter-->
+    <!-- <script type="text/javascript">document.write("<a href='//www.liveinternet.ru/click' style='display:none' target=_blank><img src='//counter.yadro.ru/hit?t26.6;r" + escape(document.referrer) + ((typeof(screen)=="undefined")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ";u" + escape(document.URL) + ";" + Math.random() + "' border=0 width=0 height=0 alt='' title='LiveInternet: показано число посетителей за сегодня'><\/a>")</script> -->
+    <!--/LiveInternet-->
+    <!-- jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/js/subscribe_footer.js+to_top.js.pagespeed.jc.aVdfw0_n_q.js"></script>
+    <script>
+        eval(mod_pagespeed_Ub5r8mmC12);
+    </script>
+    <script>
+        eval(mod_pagespeed_5ng4lnPKBD);
+    </script>
+    <script>
+        $('#mobileMenu div').on('click', function() {
+            if ($('#mobile-menu').is(':visible')) {
+                $('#mobile-menu').slideUp();
+                $('#mobileMenu .icon-menu').html('<i class="fas fa-bars"></i>');
+            } else {
+                $('#mobile-menu').slideDown();
+                $('#mobileMenu .icon-menu').html('<i class="fas fa-times"></i>');
+            }
+        });
+        $(document).scroll(function() {
+            if ($(document).width() < 1024) return false;
+            if ($(document).scrollTop() > $('header').height() + 10) $('nav').addClass('fixed');
+            else
+                $('nav').removeClass('fixed');
+        });
+
+        function validSearch() {
+            var query = $('#searchField').val().trim();
+            if (query.length > 1) {
+                var res = query.replace(/\#/g, "sharp");
+                res = res.replace(/\+/g, "plus");
+                res = res.replace(/\//g, "slash");
+                res = res.replace(/\"/g, "quote");
+                res = res.replace(/\'/g, "quote");
+                res = res.replace(/\\/g, "slash");
+                res = res.replace(/\%/g, "percent");
+                res = res.replace(/\./g, "dot");
+                location.href = '/search/' + res;
+            }
+        }
+    </script>
+    <script src="/js/prism.js"></script>
+    <script>
+        function slowScroll(id) {
+            var offset = 0;
+            if ($(window).width() > 992) offset = 100;
+            $('html, body').animate({
+                scrollTop: $(id).offset().top - offset
+            }, 500);
+        }
+        $(document).ready(function() {
+            $("head").append("<link href='https://itproger.com/css/prism.css' rel='stylesheet'>");
+            if ($(window).width() < 1024) setNavLessons(true);
+        });
+        $(window).resize(function() {
+            if ($(window).width() < 1024) setNavLessons(true);
+            else
+                setNavLessons(false);
+        });
+
+        function setNavLessons(isMobile) {
+            if (isMobile) {
+                if ($(".all_lessons_pc:not(:empty)").length > 0) {
+                    $(".all_lessons_mobile").html($(".all_lessons_pc").html());
+                    $(".all_lessons_pc").html("");
+                }
+            } else {
+                if ($(".all_lessons_mobile:not(:empty)").length > 0) {
+                    $(".all_lessons_pc").html($(".all_lessons_mobile").html());
+                    $(".all_lessons_mobile").html("");
+                }
+            }
+        }
+        $('.favourite').click(function() {
+            var url = 'react-js';
+            var nomer = '1';
+            $.ajax({
+                url: '/ajax/favourite.php',
+                type: 'POST',
+                cache: false,
+                data: {
+                    'url': url,
+                    'nomer': nomer
+                },
+                dataType: 'html',
+                success: function(data) {
+                    if (data) {
+                        $(".favourite").css("transition", "initial");
+                        $(".favourite").css("transform", "scale(1.3) rotate(70deg)");
+                        $(".favourite").css("position", "relative");
+                        $(".favourite").animate({
+                            "opacity": "0",
+                            "top": "-50px",
+                        }, 700, function() {
+                            $('.favourite').attr("class", data);
+                            $('.favourite').delay(300).removeAttr("style");
+                        });
+                    } else
+                        alert("Добавление в избранное доступно после регистрации");
+                }
+            });
+        });
+        var imgBig = false;
+        $(document).click(function() {
+            if (imgBig) {
+                $(".main-text .full-page img").trigger("click");
+                imgBig = false;
+            }
+        });
+        $(".main-text img").on("click", function() {
+            if ($(this).parent().get(0).tagName != 'A') {
+                $(this).removeAttr("style");
+                if (!$(this).parent().hasClass("full-page")) $(this).wrap("<div class='full-page'></div>");
+                else
+                    $(this).unwrap();
+                $("body").toggleClass("overlay");
+                setTimeout(function() {
+                    imgBig = !imgBig;
+                }, 500);
+            }
+        });
+        $(document).ready(function() {
+            var nomer = '1';
+            if (nomer > 1) {
+                var scrollTop = $("#listOfLessons").offset().top;
+                var elementOffset = $('#now_item').offset().top;
+                var distance = (elementOffset - scrollTop);
+                $("#listOfLessons").scrollTop(distance);
+            }
+        });
+        var isCodeOpen = false;
+
+        function openCodeSnipet(code_snipet_class) {
+            code_snipet_class = "." + code_snipet_class;
+            if (!isCodeOpen) {
+                $(code_snipet_class).css({
+                    "position": "fixed",
+                    "width": "80%",
+                    "top": "10%",
+                    "left": "10%",
+                    "z-index": "99999"
+                });
+                $(code_snipet_class + " .code_title").css("color", "#fff");
+                $(code_snipet_class + " .full_window_code").html("Уменьшить <i class='fas fa-compress-arrows-alt'></i>");
+                var height = $(window).height();
+                $(code_snipet_class + " pre").css("max-height", height / 1.4);
+                $('body').addClass('overlay');
+                isCodeOpen = true;
+            } else {
+                $(code_snipet_class).css({
+                    "position": "static",
+                    "width": "100%",
+                    "z-index": "1",
+                });
+                $(code_snipet_class + " .code_title").css("color", "#F16A51");
+                $(code_snipet_class + " .full_window_code").html("<i class='fas fa-expand-arrows-alt'></i>");
+                $(code_snipet_class + " pre").css("max-height", "250px");
+                $('body').removeClass('overlay');
+                isCodeOpen = false;
+            }
+        }
+        $(document).scroll(function() {
+            fixedBlock();
+        });
+        $(window).resize(function() {
+            fixedBlock();
+        });
+
+        function fixedBlock() {
+            if ($(document).width() >= 1024) {
+                $('#fixed_block').show();
+                $('#fixed_block').css("width", $("aside").width());
+                var scroll = $(document).scrollTop();
+                var blockFromScroll = $('.full-page-block').height();
+                if ($('.full-page-block').height() == undefined) blockFromScroll = 0;
+                if (scroll > $('aside').height() + blockFromScroll + 110 && scroll < $(document).height() - 1000) {
+                    $('#nav_fixed_aside').show();
+                    $('#fixed_block').addClass("fixed");
+                } else {
+                    $('#nav_fixed_aside').hide();
+                    $('#fixed_block').removeClass("fixed");
+                }
+            } else
+                $('#fixed_block').hide();
+        }
+        $(document).on("scroll", function() {
+            if ($('#insert_compiler').length <= 0) return false;
+            var docViewTop = $(window).scrollTop();
+            var docViewBottom = docViewTop + $(window).height();
+            if ('' != '') {
+                var elemTop = $('#insert_compiler').offset().top;
+                if ((elemTop <= docViewBottom) && (elemTop >= docViewTop)) {
+                    var compiler = '<iframe src="https://itproger.com/ide/.php" frameborder="0" style="width: 100%;height:400px"></iframe>';
+                    $('#insert_compiler').replaceWith(compiler);
+                }
+            }
+        });
+        var isOpenCompiler = false;
+        $('#online-compiler span').on('click', function() {
+            if (!isOpenCompiler) {
+                $("#online-compiler").css({
+                    "position": "fixed",
+                    "width": "90%",
+                    "top": "2%",
+                    "left": "5%",
+                    "z-index": "99999"
+                });
+                $("body").addClass("overlay");
+                $("#online-compiler h4.head-text").css("color", "#fafafa");
+                $("#online-compiler span").html('<i class="fas fa-compress-arrows-alt"></i>');
+                var height = $(window).height();
+                $("#online-compiler iframe").css("height", height / 1.2);
+                isOpenCompiler = true;
+            } else {
+                $("#online-compiler").removeAttr("style");
+                $("body").removeClass("overlay");
+                $("#online-compiler h4.head-text").removeAttr("style");
+                $("#online-compiler span").html('<i class="fas fa-expand-arrows-alt"></i>');
+                $("#online-compiler iframe").removeAttr("style");
+                $("#online-compiler iframe").css({
+                    "width": "100%",
+                    "height": "400px"
+                });
+                isOpenCompiler = false;
+            }
+            return false;
+        });
+        $(window).on("resize", function() {
+            $(".main-video iframe").each(function() {
+                if ($(this).height() == window.innerHeight) return false;
+                var width = $(this).width();
+                $(this).css("height", width / 1.7777 + "px");
+            });
+        }).resize();
+
+        function otvet(obj, arrow) {
+            if (!$(obj).is(':visible')) {
+                $(obj).slideDown();
+                $(arrow).attr('class', 'fas fa-arrow-up');
+                $(arrow).prev().text('Скрыть');
+            } else {
+                $(obj).slideUp();
+                $(arrow).attr('class', 'fas fa-arrow-down');
+                $(arrow).prev().text('Посмотреть ответ');
+            }
+        }
+
+        function showTask() {
+            if ($('.taskShow').is(':visible')) {
+                $('.showTask .btn-big-task-otvet').text('Посмотреть задание');
+                $('.showTask .btn-big-task-otvet').next().attr('class', 'fas fa-arrow-down');
+            } else {
+                $('.showTask .btn-big-task-otvet').text("Скрыть задание");
+                $('.showTask .btn-big-task-otvet').next().attr('class', 'fas fa-arrow-up');
+            }
+            $('.taskShow').slideToggle();
+        }
+
+        function setMarkerCheckbox() {
+            var check = $(".checkmark").first();
+            if ($("#rulles_get_pop_up").is(":checked")) check.html("");
+            else
+                check.html("<i class='fas fa-check'></i>");
+            $("#rulles_get_pop_up").trigger("click");
+        }
+        $('.form-button.pre_code').on('click', function() {
+            var comment_text = $(".comments form textarea").val();
+            comment_text += '<code></code>';
+            $(".comments form textarea").val(comment_text);
+        });
+        var commentCount = '0';
+        var sendingComment = false;
+        $('#send_comment').on('click', function() {
+            if (sendingComment) return false;
+            if (!$(".comments form #rulles_get_pop_up").is(":checked")) {
+                $('#send_comment').html("Нужно поставить галочку <div class='btn__blobs'><div></div><div></div><div></div></div>");
+                return false;
+            }
+            $('#send_comment').html("Добавить комментарий <div class='btn__blobs'><div></div><div></div><div></div></div>");
+            var message = $('.comments form textarea').val();
+            var username = $('.comments form input').val();
+            var reply_to = $('#comment-form .reply-block').attr("id");
+            var unique_url = '/course/react-js';
+            $.ajax({
+                url: '/ajax/add_comment.php',
+                type: 'POST',
+                cache: false,
+                data: {
+                    'message': message,
+                    'username': username,
+                    'unique_url': unique_url,
+                    'reply_to': reply_to
+                },
+                dataType: 'html',
+                beforeSend: function() {
+                    sendingComment = true;
+                },
+                success: function(data) {
+                    if (data == true) {
+                        $('.comments form textarea').val("");
+                        $('.comments form input').val("");
+                        $("#comment-form .reply-block").hide();
+                        $('#send_comment').html("Комментарий добавлен <div class='btn__blobs'><div></div><div></div><div></div></div>");
+                        if ($("#comment-form .reply-block").attr("id") == 0) {
+                            message = message.replaceAll('\n', '<br>');
+                            if (commentCount === '0') {
+                                $('.comments .all-comments').html('<div class="comment"><p class="user-name"><b>' + username + '</b> сейчас</p><div class="main-block">' + message + '</div></div>');
+                                commentCount = '1';
+                            } else
+                                $('.comments .all-comments').prepend('<div class="comment"><p class="user-name"><b>' + username + '</b> сейчас</p><div class="main-block">' + message + '</div></div>');
+                        }
+                    } else {
+                        if (data == false) alert("Что-то пошло не так! Сообщение не отправлено");
+                        else {
+                            switch (data) {
+                                case "Имя не указано":
+                                    shakeEffect("username_comment");
+                                    break;
+                                case "Сообщение не указано":
+                                    shakeEffect("message_comment");
+                                    break;
+                                default:
+                                    if (data.includes('лимит отправок')) alert(data);
+                            }
+                        }
+                    }
+                    sendingComment = false;
+                }
+            });
+        });
+
+        function replyToMessage(id, username) {
+            if ($("#comment-form .reply-block").attr("id") == id) {
+                $("#comment-form .reply-block").hide();
+                $("#comment-form .reply-block").attr("id", 0);
+            } else {
+                $("#comment-form .reply-block").show();
+                $("#comment-form .reply-block").text("Ответ к комментарию «" + username + "»");
+                $("#comment-form .reply-block").attr("id", id);
+                window.location.hash = "";
+                window.location.hash = "#comments-block";
+            }
+        }
+    </script>
+    <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a2d0b24c7cbb300136d96ac&product=inline-share-buttons"></script>
+</body>
+
+</html>
